@@ -1,2 +1,2 @@
-# js-dom
+## JS - DOM
 Prática de DOM com JavaScript
