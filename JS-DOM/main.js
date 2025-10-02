@@ -1,24 +1,24 @@
-// o document representa o documento html
+// O document representa o documento html
 // querySelector = seletor de consulta
-// captura o primeiro elemento que aparecer
+// Captura o primeiro elemento que aparecer
 const titulo = document.querySelector("h1");
 console.log(titulo);
 
-// captura todos os elementos
+// Captura todos os elementos
 const paragrafos = document.querySelectorAll("p");
 console.log(paragrafos);
 
-// alterando o conteudo textual de uma tag
+// Alterando o conteudo textual de uma tag
 titulo.innerText = "Exemplos";
 titulo.textContent = "Outro exemplo";
 
-// aplicando estilos
+// Aplicando estilos
 titulo.style.backgroundColor = "#1acc6f";
 titulo.style.padding = ".5rem";
 titulo.style.borderRadius = ".5rem";
 
-// conhecendo os eventos
-// os eventos são ações do usuário, ou seja, as interações dele com certos elementos
+// Conhecendo os eventos
+// Os eventos são ações do usuário, ou seja, as interações dele com certos elementos
 titulo.addEventListener("click", () => {
   titulo.innerText = "Outro texto";
   titulo.style.backgroundColor = "#1a58ccff";

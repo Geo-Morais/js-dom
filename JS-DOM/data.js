@@ -1,45 +1,44 @@
-// criando nova instancia de data
-// o Date() é uma função construtora
+// Criando nova instancia de data
+// O Date() é uma função construtora
 // Essa função, cria uma forma de lidar com datas
 const data = new Date();
 console.log(data);
 
-// acesando partes especificas da data
-// ano
+// Acesando partes especificas da data
+// Ano
 const ano = data.getFullYear();
 console.log(ano);
 
-// mês - Ele devolve a posição do mês que está no array
+// Mês - Ele devolve a posição do mês que está no array
 const mes = data.getMonth();
 console.log(mes);
 
-// dia da semana - Ele devolve a posição do dia da semana que está no array
+// Dia da semana - Ele devolve a posição do dia da semana que está no array
 const dia = data.getDay();
 console.log(dia);
 
-// dia completo
+// Dia completo
 const diaCompleto = data.getDate();
 console.log(diaCompleto);
 
-// horas
+// Horas
 const hora = data.getHours();
 console.log(hora);
 
-// minutos
+// Minutos
 const minutos = data.getMinutes();
 console.log(minutos);
 
-// segundos
+// Segundos
 const segundos = data.getSeconds();
 console.log(segundos);
 
-document.body.innerHTML = `${diaCompleto}/${
-  mes + 1
-}/${ano} | ${hora}:${minutos}:${segundos}`;
+document.body.innerHTML = `${diaCompleto}/${mes + 1
+  }/${ano} | ${hora}:${minutos}:${segundos}`;
 
-// criando datas especificas
+// Criando datas especificas
 const dataEspecifica = new Date(2024, 9, 25, 22, 50, 0);
-//ano, mês, dia, hora, minuto, segundo
+// Ano, mês, dia, hora, minuto, segundo
 
 console.log(dataEspecifica);
 
@@ -50,8 +49,8 @@ console.log(dataEspecifica);
 console.log(data.setHours(20));
 console.log(data.setMinutes(45));
 
-// formatando datas
-// lembre-se que o fuso horário pode apresentar dados diferentes
+// Formatando datas
+// Lembre-se que o fuso horário pode apresentar dados diferentes
 // const novaData = new Date("2025-09");
 const novaData = new Date("2025-09-19");
 console.log(novaData.toLocaleDateString("pt-br"));
